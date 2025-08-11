@@ -29,7 +29,7 @@ export const getAIMoveFromOpenRouter = async (board) => {
         const response = await fetch('https://openrouter.ai/api/v1/chat/completions', {
             method: "POST",
             headers: {
-                Authorization: `Bearer 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`, // 🔒 Don't hardcode in public
+                Authorization: `Bearer **VITE_OPENROUTER_API_KEY***`, // 🔒 Don't hardcode in public
                 "Content-Type": "application/json"
             },
             body: JSON.stringify({
